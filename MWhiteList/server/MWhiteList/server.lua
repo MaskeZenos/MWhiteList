@@ -36,7 +36,6 @@ ip1       = nil
 
 AddEventHandler('playerConnecting', function(playerName, setKickReason, deferrals)
     for k, v in pairs(GetPlayerIdentifiers(source)) do
-        print(v)
         
         if string.sub(v, 1, string.len("steam:")) == "steam:" then
             steamid1 = v
